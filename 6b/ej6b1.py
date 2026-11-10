@@ -60,14 +60,14 @@ Nota: Verifiqueu que el fitxer de logs s'hagi creat.
 """
 import logging
 
+
 def count_letters(names):
-    letters_counts = {}
+    letter_counts = {}
     for name in names:
         for letter in name:
             if letter.isalpha():
-                letter_counts[letter] = letter_counts.get(letter, 0, 1)
+                letter_counts[letter] = letter_counts.get(letter, 0) + 1
     return letter_counts
-    
 
 
 def create_log(names):
