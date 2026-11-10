@@ -63,7 +63,7 @@ Exemple:
 from typing import List
 
 
-def isprime(num):
+def is_prime(num):
     #Find the error and rewrite the correct code. 
     if num < 2:
         return False
