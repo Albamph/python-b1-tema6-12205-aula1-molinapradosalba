@@ -92,7 +92,7 @@ def read_parquet_file(path: str) -> pd.DataFrame:
     return pd.read_parquet(path)
 
 
-def calculate_amount_quantity(dataframe: pd.DataFrame) -> pd.DataFrame:
+def calculate_amount_quanity(dataframe: pd.DataFrame) -> pd.DataFrame:
     dataframe["amount"] = dataframe["price"] * dataframe["units_sold"]
     return dataframe
     
