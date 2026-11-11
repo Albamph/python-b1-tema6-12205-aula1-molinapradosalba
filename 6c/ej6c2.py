@@ -82,7 +82,7 @@ def read_txt_file(path: str) -> str:
 
 
 def words_counter(text: str, word: str) -> int:
-    return text.count(word)
+    return text.lower().count(word.lower())
     
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
